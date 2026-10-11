@@ -37,6 +37,12 @@ app.get('/get_info', (req, res) => { // para may lalabas pag nag send message
     });
 });
 
+app.get('/menu/:food', (req, res) => { // added use of req.param (kinda like food/drink suggestions)
+    const foodName = req.params.food;
+    console.log(`Suggested menu: ${foodName}`);
+    res.send(`<h1>Suggested menu: ${foodName}</h1>`);
+});
+
 app.use((req, res) => {
     console.log(`404 Page Not Found: ${req.originalUrl}`);
     res.status(404).send('<h1>404 - Page Not Found!</h1>');
