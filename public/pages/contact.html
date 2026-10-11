@@ -1,0 +1,58 @@
+<!-- Sison, Franchesca Zyreen   |   WD-303 -->
+<!-- HTML codes that were used are modified from old activities po from 2nd year hehe -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT PAGEEE</title>
+    <link rel="stylesheet" href="/pages/hf.css">
+    <link rel="stylesheet" href="/pages/contact.css">
+</head>
+<body>
+
+    <header>
+        <div class="name">ZyreenBites Café</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="/">HOME</a></li>
+                <li><a href="/menu">MENU</a></li>
+                <li><a href="/about">ABOUT</a></li>
+                <li><a href="/contact">CONTACT</a></li>
+            </ul>
+            <a href="#" class="navicon">☰</a>
+        </nav>
+        <div class="header-spacer"></div> <!-- Spacer div - balance flexbox and keep menu in center -->
+    </header>
+
+    <main class="contact-container">
+        <div class="contact-image">
+            <img src="/images/contact.jpg" alt="Coffee">
+        </div>
+
+        <div class="contact-form-box">
+            <h1>You love coffee too?</h1>
+            <h1>Contact Us!</h1>
+            <form action="/get_info" method="GET"> <!-- Para pag nag input may lalabas na d gumagamit ng post -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ZyreenBites Café | Contact: cafe@zyrnbt.com</p>
+        <p>Sison, Franchesca Zyreen | WD - 303</p>
+    </footer>
+
+</body>
+</html>
